@@ -77,6 +77,7 @@ def square(a):
 
 def triangle(a, h):
     c = a * h / 2
+    c = a * h / 2
     return c
 
 s1 = 4
@@ -133,6 +134,3 @@ for x in range(200):
         t.color("blue")
     t.forward(x * 2)
     t.left(119)
-
-
-    
