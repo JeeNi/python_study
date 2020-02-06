@@ -126,15 +126,15 @@ def turn_down():
 
 
 def fire():
-	ang = t.heading()
-	while t.ycor() > 0:
-		t.forward(15)
-		t.right(5)
+    ang = t.heading()
+    while t.ycor() > 0:
+        t.forward(15)
+        t.right(5)
 
     d = t.distance(target, 0)
     t.sety(random.randint(10, 100))
-	if d < 25:
-		t.color("blue")
+    if d < 25:
+        t.color("blue")
 		t.write("Good!", False, "center", ("", 15))
 	else:
 		t.color("red")
