@@ -118,11 +118,11 @@ import turtle as t
 import random
 
 def turn_up():
-	t.left(2)
+    t.left(2)
 
 
 def turn_down():
-	t.right(2)
+    t.right(2)
 
 
 def fire():
@@ -135,13 +135,13 @@ def fire():
     t.sety(random.randint(10, 100))
     if d < 25:
         t.color("blue")
-		t.write("Good!", False, "center", ("", 15))
-	else:
-		t.color("red")
-		t.write("Bad!", False, "center", ("",15))
-		t.color("black")
-		t.goto(-200, 10)
-		t.setheading(ang)
+        t.write("Good!", False, "center", ("", 15))
+    else:
+        t.color("red")
+        t.write("Bad!", False, "center", ("",15))
+        t.color("black")
+        t.goto(-200, 10)
+        t.setheading(ang)
 
 
 t.goto(-300, 0)
