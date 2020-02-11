@@ -19,12 +19,25 @@ print(find_max(v))
 # 출력: 숫자 n개 중에서 최댓값이 있는 위치(0부터 n-1까지의 값)
 
 def find_max_idx(a):
-    n = len(a)
-    max_idx = 0
+    n = len(a)              # 입력 크키 n
+    max_idx = 0             # 리스트 중 0번 위치를 최댓값 위치로 기억
     for i in range(1, n):
-        if a[i] > a[max_idx]:
-            max_idx = i
+        if a[i] > a[max_idx]:   # 이번 값이 현재까지 기억된 최댓값보다 크면
+            max_idx = i         # 최댓값의 위치를 변경
     return max_idx
 
 v = [17, 92, 18, 33, 58, 7, 33, 42]
 print(find_max_idx(v))
+
+
+# 연습 문제
+def find_min(a):
+    n = len(a)
+    min_v = a[0]
+    for i in range(1, n):
+        if a[i] < min_v:
+            min_v = a[i]
+    return min_v
+
+v = [17, 92, 18, 33, 58, 7, 33, 42]
+print(find_min(v))
